@@ -1,0 +1,32 @@
+								CHESS HELP
+1. Making moves
+	You can make a move by entering a string of characters. The first character should include the piece 	initial given below (All are case sensitive):
+	1. KING   : K  2. QUEEN  : Q  3. ROOK   : R  4. BISHOP : B  5. KNIGHT : N  6. PAWN   : P (optional)
+	The second character must include the alphabetical coordinate which is written below the chessboard. They are 'a', 'b', 'c', 'd', 'e', 'f', 'g' and 'h'
+The third character must include the numerical coordinate which is to the left of the chessboard. They are '1', '2', '3', '4', '5', '6', '7' and '8'.
+So the if you want to move the knight to the coordinates (f, 3), the string will look like Nf3.
+In case you want to EXCHANGE or KILL a piece then you must include 'X' in the string as the second charater.
+For example NXf3
+You can do a short castle by entering '0-0'. For long castle enter '0-0-0',
+For npassant enter 'npass'
+To offer draw you can enter 'draw'.
+To resign you can enter 'resign'.
+(Mostly enter the move with the next location)
+2. Major Rules(From a broader point of view)
+	1. When you are in CHECK, you can't do any other move which will not remove the check. You have to play a move which will take you out of CHECK.
+	2. Castling	
+	You can't do castling when the king is moved or the rook involved in castling is moved, when there is a check in the way of castling or when you are in CHECK.
+	3. Npassant
+	You can do npassant only when the previous move was a two step move of a pawn and only when the pawn if white is in the 5th row or if black pawn then in the 4th row.
+	4. Pawn Promotion
+	You can't have more than two pieces of a kind on the board.
+3. Other commands
+	1. Undo : Enter 'undo'
+	2. Redo : Enter 'redo'
+	3. Help : Enter 'help'
+	4. About : Enter 'about'
+	5. Save : Enter 'save'
+	6. Open : Enter 'open'
+	7. Enable  or Disable computer play : Enter 'cenable'
+		(Presently not working) You can enable or disable computer play (when you are in computer vs player or player vs computer mode).
+	8. Moves list : Enter 'moves'
