@@ -1,5 +1,5 @@
 project.o : newchess.h main.o coins.txt list.o newinitd.o getuserinput.o converfunc.o castling.o newgetprevloc.o newpawnsearch.o barrierfile.o simplebarrierfile.o newmove.o changestate.o printstate.o convprint.o match.o verifycheck.o checkmate.o declarewinner.o declaredraw.o checkfrompawns.o newcheckfromall.o undo.o newchessstack.o pawnpromotion.o resign.o writetofile.o readfromfile.o p_vs_p_mode.o comp_vs_p_mode.o savefile.o openmoves.o display_help.o offerdraw.o npassant.o undonpass.o draw.o piecemove.o enable.o generatemoves.o moveslist.o tree.o eval.o 
-	cc main.o newinitd.o list.o getuserinput.o converfunc.o castling.o newgetprevloc.o newpawnsearch.o barrierfile.o simplebarrierfile.o newmove.o changestate.o printstate.o convprint.o match.o verifycheck.o checkmate.o declarewinner.o declaredraw.o checkfrompawns.o newcheckfromall.o undo.o newchessstack.o pawnpromotion.o resign.o writetofile.o readfromfile.o p_vs_p_mode.o comp_vs_p_mode.o p_vs_comp_mode.o  -lncursesw savefile.o openmoves.o display_help.o offerdraw.o npassant.o undonpass.o draw.o piecemove.o enable.o generatemoves.o moveslist.o tree.o eval.o -o project.o 
+	cc main.o newinitd.o list.o getuserinput.o converfunc.o castling.o newgetprevloc.o newpawnsearch.o barrierfile.o simplebarrierfile.o newmove.o changestate.o printstate.o convprint.o match.o verifycheck.o checkmate.o declarewinner.o declaredraw.o checkfrompawns.o newcheckfromall.o undo.o newchessstack.o pawnpromotion.o resign.o writetofile.o readfromfile.o p_vs_p_mode.o comp_vs_p_mode.o  -lncursesw savefile.o openmoves.o display_help.o offerdraw.o npassant.o undonpass.o draw.o piecemove.o enable.o generatemoves.o moveslist.o tree.o eval.o -o project.o 
 main.o : main.c newchess.h
 	cc -c main.c -o main.o
 p_vs_p_mode.o : p_vs_p_mode.c newchess.h
@@ -84,3 +84,8 @@ tree.o : tree.c newchess.h
 	cc -c tree.c -o tree.o
 eval.o : eval.c newchess.h
 	cc -c eval.c -o eval.o
+
+
+clean :
+	rm *.o
+	rm *~
